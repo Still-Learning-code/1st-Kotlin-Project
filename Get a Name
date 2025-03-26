@@ -1,0 +1,21 @@
+fun main(args: Array<String>) {
+    val example = LateinitExample()
+    example.initalizeName()
+    example.printName()
+
+}
+    class LateinitExample {
+        lateinit var name: String
+
+        fun initalizeName() {
+            name = "Kotlin"
+        }
+            fun printName() {
+                if (::name.isInitialized) {
+                    println(name)
+
+                } else {
+                    println(name)
+                }
+            }
+        }
